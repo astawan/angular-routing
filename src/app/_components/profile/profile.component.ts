@@ -9,16 +9,21 @@ export class ProfileComponent implements OnInit {
   nama: string = 'Kadek Darmaastawan';
   prodi: string = 'Teknologi Informasi';
   jenis: boolean = true;
-  nilaiRata?: number;
-  nilaiPenguji1?: number;
-  nilaiPenguji2?: number;
-  nilaiPenguji3?: number;
+  nilaiRata: number = 0;
+  nilaiPenguji1: number = 0;
+  nilaiPenguji2: number = 0;
+  nilaiPenguji3: number = 0;
   constructor() {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.nilaiPenguji1 = 100;
+  }
 
   onRata() {
     this.nilaiRata =
-      (this.nilaiPenguji1! + this.nilaiPenguji2! + this.nilaiPenguji3!) / 3;
+      (this.nilaiPenguji1 + this.nilaiPenguji2 + this.nilaiPenguji3) / 3;
+    console.log(
+      (this.nilaiPenguji1 + this.nilaiPenguji2 + this.nilaiPenguji3) / 3
+    );
   }
 }
