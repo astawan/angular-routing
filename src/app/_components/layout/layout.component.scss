@@ -1,0 +1,18 @@
+.content {
+  width: 100vw;
+  height: calc(100vh - 100px);
+  display: flex;
+  direction: row;
+
+  .sidebar {
+    background-color: lightgreen;
+    width: 250px;
+
+    ul {
+      li {
+        padding: 1rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

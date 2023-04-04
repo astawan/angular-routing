@@ -1,2 +1,38 @@
-<div><span>Nama: Kadek Darmaastawan</span></div>
-<div><span>Program Studi: Teknologi Informasi</span></div>
+<div>
+  <div>
+    <span>Nama: {{ nama }}</span>
+  </div>
+</div>
+<div>
+  <span>Program Studi: {{ prodi }}</span>
+</div>
+<div>
+  <span>Dosen: {{ jenis }}</span>
+</div>
+<div>
+  <span>Nilai rata-rata: {{ nilaiRata }}</span>
+</div>
+<div>
+  <input
+    type="text"
+    placeholder="nilai penguji 1"
+    (keyup)="onRata()"
+    [(ngModel)]="nilaiPenguji1"
+  />
+</div>
+<div>
+  <input
+    type="text"
+    placeholder="nilai penguji 2"
+    (keyup)="onRata()"
+    [(ngModel)]="nilaiPenguji2"
+  />
+</div>
+<div>
+  <input
+    type="text"
+    placeholder="nilai penguji 3"
+    (keyup)="onRata()"
+    [(ngModel)]="nilaiPenguji3"
+  />
+</div>

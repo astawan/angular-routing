@@ -1,0 +1,34 @@
+<!-- HEADER START -->
+<app-header></app-header>
+<!-- HEADER END -->
+
+<!-- CONTENT START -->
+<div class="content">
+  <!-- SIDEBAR START -->
+  <div class="sidebar">
+    <ul>
+      <li [routerLink]="'dashboard'">
+        <span>Dashboard</span>
+      </li>
+      <li [routerLink]="'profile'">
+        <span>Profile</span>
+      </li>
+      <li [routerLink]="'setting'">
+        <span>Setting</span>
+      </li>
+      <li [routerLink]="'jadwal-kuliah'">
+        <span>Jadwal</span>
+      </li>
+    </ul>
+  </div>
+  <!-- SIDEBAR END -->
+
+  <!-- ROUTE START -->
+  <router-outlet></router-outlet>
+  <!-- ROUTE END -->
+</div>
+<!-- CONTENT END -->
+
+<!-- FOOTER START -->
+<app-footer></app-footer>
+<!-- FOOTER END -->
